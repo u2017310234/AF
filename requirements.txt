@@ -1,0 +1,20 @@
+# OpenAgents Framework Requirements
+# This file lists the dependencies for running the Hackthon project with OpenAgents
+
+# Core framework (includes LLM providers for OpenAI, Gemini, Anthropic, etc.)
+openagents>=0.7.0
+python-dotenv>=1.0.0
+
+# Database
+psycopg2-binary>=2.9.0
+
+# Optional: Alternative database driver
+# psycopg2>=2.9.0  # Use this for production (requires libpq-dev)
+
+# Note: OpenAgents includes built-in LLM providers that support:
+# - OpenAI (via openai package, included with openagents)
+# - Google Gemini (via google-generativeai package)
+# -  Qwen
+#
+# Install google-generativeai if using Gemini provider:
+pip install google-generativeai
